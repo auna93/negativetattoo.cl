@@ -1,6 +1,10 @@
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
-  --color-primary: #0f172a;
-  --color-secondary: #6b21a8;
+  --color-primary: #000;
+  --color-secondary: ##431A22;
 }
 
 *,
@@ -23,7 +27,7 @@ body {
 body::after {
   content: '';
   background: url('../img/01.goku_right.jpg') #000 no-repeat top right fixed;
-  opacity: 0.9;
+  opacity: 0.7;
   top: 0;
   left: 0;
   bottom: 0;
@@ -33,6 +37,7 @@ body::after {
 }
 
 .container {
+  margin-top: 70pux;
   position: relative;
   padding: 2rem;
   height: 100%;

@@ -1,5 +1,6 @@
 ---
-import Header from '../components/Header.astro';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 export interface Props {
@@ -24,8 +25,7 @@ const { title = "Negative Tattoo" } = Astro.props as Props;
   </head>
   <body>
     <Header />
-    <div class="container">
-      <slot />
-    </div>
+    <slot />
+    <Footer />
   </body>
 </html>
