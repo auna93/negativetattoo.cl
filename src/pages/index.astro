@@ -4,10 +4,29 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <div class="container">
-    <h1>Negative Tattoo</h1>
-    <h3>Sebastian Aceval</h3>
+    <div id="hero" class="hero-background">
+      <video id="bgvideo" preload="auto" autoplay="" loop="" muted="" style="">
+        <source src="../video/sample.mp4" type="video/mp4" />
+      </video>
+      <h1>Negative Tattoo</h1>
+      <h3>Sebastian Aceval</h3>
+    </div>
     <div class="space"></div>
     <div class="space"></div>
     <div class="space"></div>
   </div>
 </Layout>
+
+<style>
+  video#bgvideo {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(placeholder.jpg) no-repeat;
+  }
+</style>

@@ -1,12 +1,12 @@
 ---
-import logo from "../img/logo.svg";
+import logo from "../img/logo_white.svg";
 ---
 
 <header class="header">
   <div class="container">
     <div class="logo">
       <a href="/">
-        <img src={logo} alt="" />
+        <img src={logo} alt="NegativeTattoo" />
       </a>
     </div>
     <nav>
@@ -14,6 +14,7 @@ import logo from "../img/logo.svg";
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/blog">Blog</a></li>
+        <div></div>
       </ul>
     </nav>
   </div>
@@ -21,13 +22,15 @@ import logo from "../img/logo.svg";
 
 <style>
   .header {
-    height: 70px;
+    height: 150px;
     position: sticky;
     top: 0;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .header .container {
     height: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,8 +38,13 @@ import logo from "../img/logo.svg";
   }
 
   .header img {
-    height: 35px;
-    vertical-align: middle;
+    z-index: 100;
+    width: 150px;
+    transition-duration: 0.3s;
+  }
+  .header img:hover{
+
+    filter: drop-shadow(0px 0px 5px #fff);
   }
 
   .header nav ul {

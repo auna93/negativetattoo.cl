@@ -39,8 +39,9 @@ body::after {
 .container {
   margin-top: 70pux;
   position: relative;
-  padding: 2rem;
   height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .space {
@@ -71,11 +72,6 @@ h3 {
   line-height: 1.2;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
 
 .btn {
   display: inline-block;
@@ -115,7 +111,7 @@ h3 {
 
   body::after {
     content: '';
-    background: url('../img/01.goku_right.jpg') #000 no-repeat top right fixed;
+    background: url('../../public/img/01.goku_right.jpg') #000 no-repeat top right fixed;
     opacity: 0.5;
     top: 0;
     left: 0;
