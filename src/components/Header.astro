@@ -1,61 +1,90 @@
 ---
-import logo from "../img/logo_white.svg";
+import logo from "/../img/logo_white.svg";
 ---
 
-<header class="header">
-  <div class="container">
-    <div class="logo">
+<header class="header flex bg-black h-32 items-center relative sticky top-0 z-50">
+  <nav class="flex justify-center items-center text-white align-middle"
+    id="navbar">
+    <div class="logo z-30 left-20 mx-auto absolute" id="logo">
       <a href="/">
-        <img src={logo} alt="NegativeTattoo" />
+        <img
+          class="w-36 transition hover:drop-shadow-sm"
+          src={logo}
+          alt="NegativeTattoo"
+        />
       </a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <div></div>
-      </ul>
-    </nav>
-  </div>
+    <ul
+      class="flex space-x-8 items-center justify-center font-bold absolute right-20"
+    >
+      <li><a class="hover:drop-shadow-sm text-2xl" href="/">Home</a></li>
+      <li>
+        <a class="hover:drop-shadow-sm text-2xl" href="/galleria">Galeria</a>
+      </li>
+      <li>
+        <a class="hover:drop-shadow-sm text-2xl" href="/tienda">Tienda</a>
+      </li>
+      <li><a class="hover:drop-shadow-sm text-2xl" href="/blog">Blog</a></li>
+      <li><a class="hover:drop-shadow-sm text-2xl" href="/about">Acerca</a></li>
+      <div></div>
+    </ul>
+  </nav>
+  <script>
+    /* window.onscroll = function () { */
+    /*   scrollFunction(); */
+    /* }; */
+
+    /* function scrollFunction() { */
+    /*   if ( */
+    /*     document.body.scrollTop > 80 || */
+    /*     document.documentElement.scrollTop > 80 */
+    /*   ) { */
+    /*     document.getElementById("navbar").style.padding = "30px 10px"; */
+    /*     document.getElementById("logo").style.fontSize = "25px"; */
+    /*   } else { */
+    /*     document.getElementById("navbar").style.padding = "80px 10px"; */
+    /*     document.getElementById("logo").style.fontSize = "35px"; */
+    /*   } */
+    /* } */
+  </script>
 </header>
 
 <style>
-  .header {
-    height: 150px;
-    position: sticky;
-    top: 0;
-    background: rgba(0, 0, 0, 0.2);
-  }
-
-  .header .container {
-    height: 100%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-
-  .header img {
-    z-index: 100;
-    width: 150px;
-    transition-duration: 0.3s;
-  }
-  .header img:hover{
-
-    filter: drop-shadow(0px 0px 5px #fff);
-  }
-
-  .header nav ul {
-    display: flex;
-  }
-
-  .header nav ul li {
-    padding: 0 10px;
-  }
-
-  .header nav ul li a {
-    color: #fff;
-  }
+  /* .header { */
+  /*   height: 150px; */
+  /*   position: sticky; */
+  /*   top: 0; */
+  /*   background: rgba(0, 0, 0, 0.2); */
+  /* } */
+  /*  */
+  /* .header .container { */
+  /*   height: 100%; */
+  /*   width: 80%; */
+  /*   display: flex; */
+  /*   align-items: center; */
+  /*   justify-content: space-between; */
+  /*   padding: 0 20px; */
+  /* } */
+  /*  */
+  /* .header img { */
+  /*   z-index: 100; */
+  /*   width: 150px; */
+  /*   transition-duration: 0.3s; */
+  /* } */
+  /* .header img:hover{ */
+  /*  */
+  /*   filter: drop-shadow(0px 0px 5px #fff); */
+  /* } */
+  /*  */
+  /* .header nav ul { */
+  /*   display: flex; */
+  /* } */
+  /*  */
+  /* .header nav ul li { */
+  /*   padding: 0 10px; */
+  /* } */
+  /*  */
+  /* .header nav ul li a { */
+  /*   color: #fff; */
+  /* } */
 </style>
