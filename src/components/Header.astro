@@ -2,13 +2,15 @@
 import logo from "/../img/logo_white.svg";
 ---
 
-<header class="header flex bg-black h-32 items-center relative sticky top-0 z-50">
-  <nav class="flex justify-center items-center text-white align-middle"
-    id="navbar">
+<header class="header flex bg-black bg-opacity-30 h-32 items-center sticky top-0 z-50">
+  <nav
+    class="flex justify-center items-center text-white align-middle"
+    id="navbar"
+  >
     <div class="logo z-30 left-20 mx-auto absolute" id="logo">
       <a href="/">
         <img
-          class="w-36 transition hover:drop-shadow-sm"
+          class="w-36 transition  hover:drop-shadow-sm"
           src={logo}
           alt="NegativeTattoo"
         />
@@ -17,15 +19,16 @@ import logo from "/../img/logo_white.svg";
     <ul
       class="flex space-x-8 items-center justify-center font-bold absolute right-20"
     >
-      <li><a class="hover:drop-shadow-sm text-2xl" href="/">Home</a></li>
+      <li><a class="hover:drop-shadow-sm text-2xl" href="#">Inicio</a></li>
+      <li><a class="hover:drop-shadow-sm text-2xl" href="/about">Bio</a></li>
       <li>
-        <a class="hover:drop-shadow-sm text-2xl" href="/galleria">Galeria</a>
+        <a class="hover:drop-shadow-sm text-2xl" href="/galeria">Galeria</a>
       </li>
       <li>
         <a class="hover:drop-shadow-sm text-2xl" href="/tienda">Tienda</a>
       </li>
       <li><a class="hover:drop-shadow-sm text-2xl" href="/blog">Blog</a></li>
-      <li><a class="hover:drop-shadow-sm text-2xl" href="/about">Acerca</a></li>
+      <li><a class="hover:drop-shadow-sm text-2xl" href="/blog">FAQ</a></li>
       <div></div>
     </ul>
   </nav>
